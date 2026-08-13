@@ -41,15 +41,6 @@ export function ContactFooter() {
                     <span>{member.email}</span>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href={`tel:${member.phone.replace(/\s/g, "")}`}
-                    className="inline-flex items-start gap-2 transition-colors hover:text-stone-900"
-                  >
-                    <Phone className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" />
-                    <span>{member.phone}</span>
-                  </a>
-                </li>
                 <li className="inline-flex items-start gap-2">
                   <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-amber-600" />
                   <span>{member.address}</span>
