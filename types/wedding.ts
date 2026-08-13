@@ -69,3 +69,12 @@ export interface EventDetail {
   dressCode: string;
   culturalMeaning: string;
 }
+
+export interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  email: string;
+  phone: string;
+  address: string;
+}

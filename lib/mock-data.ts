@@ -1,6 +1,7 @@
 import type {
   EventDetail,
   ShoppingGuideItem,
+  TeamMember,
   Vendor,
 } from "@/types/wedding";
 
@@ -268,6 +269,41 @@ export const RITUAL_EXPLAINERS: Record<
       "Que sont les Pheras ? Le couple fait sept tours autour du feu sacré, chaque tour étant un vœu de devoir, de prospérité et d'amour éternel.",
   },
 };
+
+export const TEAM_MEMBERS: TeamMember[] = [
+  {
+    id: "tm1",
+    name: "Sumit Neniwal",
+    role: "Founder & Product",
+    email: "sumit@shaadigen.ai",
+    phone: "+91 98765 41001",
+    address: "ShaadiGen HQ, 14 Khan Market, New Delhi 110003",
+  },
+  {
+    id: "tm2",
+    name: "Aisha Rahman",
+    role: "Vendor Partnerships",
+    email: "aisha@shaadigen.ai",
+    phone: "+91 98765 41002",
+    address: "Cowork Floor 3, Connaught Place, New Delhi 110001",
+  },
+  {
+    id: "tm3",
+    name: "Rohan Mehta",
+    role: "AI Studio Lead",
+    email: "rohan@shaadigen.ai",
+    phone: "+91 98765 41003",
+    address: "Studio 8, Hauz Khas Village, New Delhi 110016",
+  },
+  {
+    id: "tm4",
+    name: "Priya Kapoor",
+    role: "Guest Experience",
+    email: "priya@shaadigen.ai",
+    phone: "+91 98765 41004",
+    address: "Guest Hub Desk, Bandra West, Mumbai 400050",
+  },
+];
 
 export const BUDGET_ALLOCATION: { label: string; pct: number; emoji: string }[] =
   [
