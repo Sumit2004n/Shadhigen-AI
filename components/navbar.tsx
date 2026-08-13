@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, Wallet, X } from "lucide-react";
+import { Menu, Phone, Wallet, X } from "lucide-react";
 import { useBudget } from "@/components/budget-context";
 import { cn, formatINR } from "@/lib/utils";
 
@@ -57,6 +57,15 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <Link
+            href="/#contact"
+            className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-50 px-3 py-1.5 text-sm font-semibold text-amber-900 transition-colors hover:bg-amber-100"
+            title="Jump to contact details"
+            aria-label="Jump to contact details"
+          >
+            <Phone className="h-4 w-4" />
+            <span className="hidden sm:inline">Contact</span>
+          </Link>
           <div
             className="flex items-center gap-2 rounded-full border border-emerald-300 bg-emerald-50 px-3 py-1.5 text-sm font-semibold text-emerald-800"
             title="Your working wedding budget"
@@ -93,6 +102,14 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
+          <Link
+            href="/#contact"
+            onClick={() => setOpen(false)}
+            className="mt-1 flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-amber-900 hover:bg-amber-100"
+          >
+            <Phone className="h-4 w-4" />
+            Contact
+          </Link>
         </nav>
       )}
     </header>
